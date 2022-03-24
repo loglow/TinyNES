@@ -71,10 +71,10 @@
 <circle x="73.255" y="111.588" radius="2" width="0.15" layer="22"/>
 <circle x="47.22" y="91.905" radius="2" width="0.15" layer="22"/>
 <text x="92.5" y="117" size="2" layer="22" ratio="10" rot="MR180" align="center">TD-TNES-T-EB
-2022-03-17
+2022-03-24
 tall-dog.com</text>
 <text x="39.5" y="112" size="3" layer="21" ratio="10" rot="SR90" align="center">TD-TNES-T
-2022-03-17
+2022-03-24
 tall-dog.com</text>
 <wire x1="20" y1="99" x2="20" y2="125" width="0.3" layer="21"/>
 <wire x1="22" y1="127" x2="64.5" y2="127" width="0.3" layer="21"/>
@@ -258,10 +258,10 @@ ON TOP SIDE</text>
 <wire x1="92.5" y1="30" x2="92.5" y2="28" width="0.15" layer="22"/>
 <text x="47.5" y="24" size="2" layer="22" ratio="10" rot="MR0" align="bottom-right">CTRL2
 160 mm
-JST PH 7P</text>
+7PH CABLE</text>
 <text x="102.5" y="24" size="2" layer="22" ratio="10" rot="MR0" align="bottom-right">CTRL1
 160 mm
-JST PH 7P</text>
+7PH CABLE</text>
 <wire x1="15" y1="2" x2="15" y2="20.4" width="0.15" layer="22"/>
 <wire x1="20" y1="2" x2="20" y2="20.4" width="0.15" layer="22"/>
 <wire x1="60" y1="2" x2="60" y2="20.4" width="0.15" layer="22"/>
@@ -270,7 +270,7 @@ JST PH 7P</text>
 <wire x1="70" y1="2" x2="70" y2="20.4" width="0.15" layer="22"/>
 <wire x1="115" y1="2" x2="115" y2="20.4" width="0.15" layer="22"/>
 <wire x1="110" y1="2" x2="110" y2="20.4" width="0.15" layer="22"/>
-<text x="106" y="79.2" size="2" layer="22" ratio="10" rot="MR0" align="center-left">OUTLINE:
+<text x="106" y="79.2" size="2" layer="22" ratio="10" rot="MR0" align="center-left">WHITE OUTLINE:
 7× M2.5 × 5 mm
 STANDOFF</text>
 <text x="117" y="65" size="2" layer="22" ratio="10" rot="MR0" align="center-left">NO OUTLINE:
@@ -3967,7 +3967,7 @@ ON TOP SIDE</text>
 <vertex x="2.061709375" y="1.144628125"/>
 <vertex x="1.77950625" y="1.144628125"/>
 </polygon>
-<text x="0" y="-3.75" size="1.2" layer="21" ratio="10" rot="SR0" align="center">USXXXXXX</text>
+<text x="0" y="-3.75" size="1.2" layer="21" ratio="10" rot="SR0" align="center">US002093</text>
 </package>
 <package name="_LOGO-CE">
 <polygon width="0" layer="21">
