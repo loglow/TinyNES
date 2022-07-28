@@ -1,6 +1,7 @@
 Item,Qty,Soldermask,Silkscreen,Finish,Thickness (mm),Length (mm),Width (mm),Trace (mil),Hole (mm),Machining
 Main Board,1,Matte black,White,ENIG,1.6,104.14,124.46,10,0.3,No
 Controller Port,2,Matte black,White,ENIG,1.6,50.0,21.5,10,0.3,No
+RGB Board,1,Matte black,White,ENIG,1.6,53.34,10.16,8,0.3,No
 Enclosure Top,1,Matte black,White,ENIG,2,130,130,10,0.3,Yes
 Enclosure Bottom,1,Matte black,White,ENIG,2,130,130,10,0.3,Yes
 Enclosure Front,1,Matte black,White,ENIG,2,126,22,10,0.3,Yes
