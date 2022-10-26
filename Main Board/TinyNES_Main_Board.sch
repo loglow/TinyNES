@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -1540,7 +1540,7 @@ DIN A3, landscape with extra doc field</description>
 <text x="1.27" y="-1.27" size="3.556" layer="95" align="center-left">&gt;NAME</text>
 <text x="1.27" y="-5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
 </symbol>
-<symbol name="RP2A03">
+<symbol name="CPU">
 <wire x1="-142.24" y1="2.54" x2="-142.24" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="0" y1="2.54" x2="0" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="-142.24" y1="2.54" x2="0" y2="2.54" width="0.254" layer="94"/>
@@ -1612,7 +1612,7 @@ DIN A3, landscape with extra doc field</description>
 <text x="-49.53" y="-1.27" size="3.556" layer="95" rot="R180" align="center-left">&gt;NAME</text>
 <text x="-49.53" y="-5.08" size="1.778" layer="96" rot="R180" align="center-left">&gt;VALUE</text>
 </symbol>
-<symbol name="RP2C02">
+<symbol name="PPU">
 <wire x1="-172.72" y1="2.54" x2="-172.72" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="0" y1="2.54" x2="0" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="-172.72" y1="2.54" x2="0" y2="2.54" width="0.254" layer="94"/>
@@ -1975,7 +1975,7 @@ DIN A3, landscape with extra doc field</description>
 <pin name="P$1" x="-2.54" y="0" visible="off" length="point"/>
 <text x="0" y="2.54" size="1.778" layer="95" align="center">&gt;NAME</text>
 </symbol>
-<symbol name="FPF2107">
+<symbol name="FPF210X">
 <wire x1="-7.62" y1="2.54" x2="7.62" y2="2.54" width="0.254" layer="94"/>
 <wire x1="7.62" y1="2.54" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
@@ -2632,9 +2632,9 @@ DIN A3, landscape with extra doc field</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="RP2A03" prefix="U">
+<deviceset name="CPU" prefix="U">
 <gates>
-<gate name="G$1" symbol="RP2A03" x="0" y="0"/>
+<gate name="G$1" symbol="CPU" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="DIP-40">
@@ -2716,9 +2716,9 @@ DIN A3, landscape with extra doc field</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="RP2C02" prefix="U">
+<deviceset name="PPU" prefix="U">
 <gates>
-<gate name="G$1" symbol="RP2C02" x="0" y="0"/>
+<gate name="G$1" symbol="PPU" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="DIP-40">
@@ -3071,9 +3071,9 @@ DIN A3, landscape with extra doc field</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="FPF2107" prefix="U">
+<deviceset name="FPF210X" prefix="U">
 <gates>
-<gate name="G$1" symbol="FPF2107" x="0" y="0"/>
+<gate name="G$1" symbol="FPF210X" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="SOT-23-5">
@@ -3569,9 +3569,9 @@ DIN A3, landscape with extra doc field</description>
 <part name="H6" library="TinyNES_Library" deviceset="CTRL" device="" value="CTRL"/>
 <part name="R17" library="TinyNES_Library" deviceset="RESISTOR" device="-0805" value="10k"/>
 <part name="U1" library="TinyNES_Library" deviceset="BUFFER" device=""/>
-<part name="H1" library="TinyNES_Library" deviceset="CART-72" device="-CONN-VERT" value="CART-72"/>
-<part name="U14" library="TinyNES_Library" deviceset="RP2A03" device=""/>
-<part name="U16" library="TinyNES_Library" deviceset="RP2C02" device=""/>
+<part name="H1" library="TinyNES_Library" deviceset="CART-72" device="-CONN-VERT" value="CART"/>
+<part name="U14" library="TinyNES_Library" deviceset="CPU" device=""/>
+<part name="U16" library="TinyNES_Library" deviceset="PPU" device=""/>
 <part name="C2" library="TinyNES_Library" deviceset="CAP-NP" device="-0805" value="0.1u"/>
 <part name="C3" library="TinyNES_Library" deviceset="CAP-NP" device="-0805" value="0.1u"/>
 <part name="C14" library="TinyNES_Library" deviceset="CAP-NP" device="-0805" value="0.1u"/>
@@ -3589,7 +3589,7 @@ DIN A3, landscape with extra doc field</description>
 <part name="HOLE2" library="TinyNES_Library" deviceset="HOLE" device="-M2.5"/>
 <part name="HOLE1" library="TinyNES_Library" deviceset="HOLE" device="-M2.5"/>
 <part name="HOLE7" library="TinyNES_Library" deviceset="HOLE" device="-M2.5"/>
-<part name="U20" library="TinyNES_Library" deviceset="FPF2107" device=""/>
+<part name="U20" library="TinyNES_Library" deviceset="FPF210X" device=""/>
 <part name="R21" library="TinyNES_Library" deviceset="RESISTOR" device="-0805" value="110R"/>
 <part name="C35" library="TinyNES_Library" deviceset="CAP-NP" device="-0805" value="560p"/>
 <part name="R22" library="TinyNES_Library" deviceset="RESISTOR" device="-0805" value="150R"/>
