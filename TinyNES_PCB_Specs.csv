@@ -1,9 +1,13 @@
-Item,Qty,Soldermask,Silkscreen,Finish,Thickness (mm),Length (mm),Width (mm),Trace (mil),Hole (mm),Machining
-Main Board,1,Matte black,White,ENIG,1.6,104.14,124.46,10,0.3,No
-Controller Port,2,Matte black,White,ENIG,1.6,50.0,21.5,10,0.3,No
-RGB Board,1,Matte black,White,ENIG,1.6,53.34,10.16,8,0.3,No
-Enclosure Top,1,Matte black,White,ENIG,2,130,130,10,0.3,Yes
-Enclosure Bottom,1,Matte black,White,ENIG,2,130,130,10,0.3,Yes
-Enclosure Front,1,Matte black,White,ENIG,2,126,22,10,0.3,Yes
-Enclosure Rear,1,Matte black,White,ENIG,2,126,22,10,0.3,No
-Enclosure Side,2,Matte black,White,ENIG,2,130,22,10,0.3,No
+PCB,Soldermask,Silkscreen,Finish,Thickness (mm),Length (mm),Width (mm),Trace (mil),Hole (mm),Machining
+Main Board,Matte black,White,ENIG,1.6,104.14,124.46,10,0.3,No
+J3 Spacer,Matte black,White,ENIG,0.8,11.9,12.3,10,0.3,No
+Controller Port,Matte black,White,ENIG,1.6,50.0,21.5,10,0.3,No
+RGB Board,Matte black,White,ENIG,1.6,53.34,10.16,10,0.3,No
+Jumper Board,Matte black,White,ENIG,1.6,53.34,10.16,10,0.3,No
+Enclosure Top,Matte black,White,ENIG,2,130,130,10,0.3,Yes
+Enclosure Bottom,Matte black,White,ENIG,2,130,130,10,0.3,Yes
+Enclosure Front,Matte black,White,ENIG,2,126,22,10,0.3,Yes
+Enclosure Rear,Matte black,White,ENIG,2,126,22,10,0.3,No
+Enclosure Side,Matte black,White,ENIG,2,130,22,10,0.3,No
+Controller Board,Matte black,White,ENIG,1.6,113,43,10,0.3,No
+RGBS to YPbPr,Matte black,White,ENIG,1.6,56,56,10,0.3,No
