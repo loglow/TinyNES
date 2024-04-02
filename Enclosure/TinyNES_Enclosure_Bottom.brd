@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.5" altunitdist="mm" altunit="mm"/>
+<grid distance="0.25" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.5" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -38,7 +38,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
@@ -70,11 +70,11 @@
 <circle x="118.34" y="108.16" radius="2" width="0.15" layer="22"/>
 <circle x="73.255" y="111.588" radius="2" width="0.15" layer="22"/>
 <circle x="47.22" y="91.905" radius="2" width="0.15" layer="22"/>
-<text x="92.5" y="117" size="2" layer="22" ratio="10" rot="MR180" align="center">TD-TNES-T-EB
-2022-03-24
+<text x="92.5" y="117" size="2" layer="22" ratio="10" rot="MR180" align="center">TD-TNES-U-EB
+2023-02-24
 tall-dog.com</text>
-<text x="39.5" y="112" size="3" layer="21" ratio="10" rot="SR90" align="center">TD-TNES-T
-2022-03-24
+<text x="39.5" y="112" size="3" layer="21" ratio="10" rot="SR90" align="center">TD-TNES-U
+2023-02-24
 tall-dog.com</text>
 <wire x1="20" y1="99" x2="20" y2="125" width="0.3" layer="21"/>
 <wire x1="22" y1="127" x2="64.5" y2="127" width="0.3" layer="21"/>
@@ -276,6 +276,16 @@ STANDOFF</text>
 <text x="117" y="65" size="2" layer="22" ratio="10" rot="MR0" align="center-left">NO OUTLINE:
 8× M2.5 × 22 mm
 STANDOFF</text>
+<hole x="67.54" y="45.61" drill="5"/>
+<text x="73.14" y="45.61" size="2" layer="29" ratio="10" rot="SR90" align="center">EXP</text>
+<wire x1="74.89" y1="40.86" x2="64.39" y2="40.86" width="0.2" layer="29"/>
+<wire x1="64.39" y1="50.36" x2="74.89" y2="50.36" width="0.2" layer="29"/>
+<wire x1="76.39" y1="42.36" x2="76.39" y2="48.86" width="0.2" layer="29"/>
+<wire x1="62.89" y1="42.36" x2="62.89" y2="48.86" width="0.2" layer="29"/>
+<wire x1="64.39" y1="40.86" x2="62.89" y2="42.36" width="0.2" layer="29" curve="-90"/>
+<wire x1="76.39" y1="42.36" x2="74.89" y2="40.86" width="0.2" layer="29" curve="-90"/>
+<wire x1="74.89" y1="50.36" x2="76.39" y2="48.86" width="0.2" layer="29" curve="-90"/>
+<wire x1="62.89" y1="48.86" x2="64.39" y2="50.36" width="0.2" layer="29" curve="-90"/>
 </plain>
 <libraries>
 <library name="TinyNES_Library">

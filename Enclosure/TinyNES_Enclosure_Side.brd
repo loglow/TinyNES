@@ -53,7 +53,7 @@
 <wire x1="0" y1="0" x2="0" y2="22" width="0" layer="20"/>
 <wire x1="0" y1="22" x2="130" y2="22" width="0" layer="20"/>
 <text x="65" y="13" size="2" layer="22" ratio="10" rot="MR0" align="center">TD-TNES-T-ES
-2022-03-16
+2023-02-22
 tall-dog.com</text>
 <wire x1="128" y1="22" x2="128" y2="0" width="0.15" layer="22"/>
 <wire x1="2" y1="22" x2="2" y2="0" width="0.15" layer="22"/>

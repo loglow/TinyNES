@@ -56,7 +56,7 @@
 <wire x1="10" y1="24" x2="10" y2="43" width="0" layer="20"/>
 <wire x1="11" y1="44" x2="119" y2="44" width="0" layer="20"/>
 <text x="65" y="115.5" size="2" layer="22" ratio="10" rot="MR180" align="center">TD-TNES-T-ET
-2022-03-16
+2023-02-22
 tall-dog.com</text>
 <text x="65" y="20" size="2" layer="29" ratio="10" rot="SR0" align="center">CART LABEL FACES THIS SIDE</text>
 <text x="65" y="92.5" size="8" layer="29" rot="SR0" align="center">TinyNES</text>
