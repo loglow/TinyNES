@@ -576,6 +576,47 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="-4.1" y1="-4.1" x2="-4.1" y2="4.1" width="0.127" layer="51"/>
 <text x="0" y="0" size="1" layer="51" ratio="10" rot="R90" align="center">&gt;NAME</text>
 </package>
+<package name="SJ-43514">
+<hole x="2.9" y="0" drill="1.1"/>
+<hole x="7.9" y="0" drill="1.1"/>
+<wire x1="0" y1="-5.3" x2="0" y2="-3" width="0.127" layer="21"/>
+<wire x1="0" y1="-3" x2="0" y2="3" width="0.127" layer="21"/>
+<wire x1="0" y1="3" x2="0" y2="4.9" width="0.127" layer="21"/>
+<wire x1="0" y1="3" x2="-2.5" y2="3" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="3" x2="-2.5" y2="-3" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="-3" x2="0" y2="-3" width="0.127" layer="21"/>
+<text x="6.35" y="0" size="1" layer="21" ratio="10" rot="R270" align="center">&gt;NAME</text>
+<text x="6.35" y="0" size="1" layer="51" ratio="10" rot="R270" align="center">&gt;NAME</text>
+<wire x1="-2.5" y1="3" x2="-2.5" y2="-3" width="0.127" layer="51"/>
+<wire x1="0" y1="3" x2="-2.5" y2="3" width="0.127" layer="51"/>
+<wire x1="-2.5" y1="-3" x2="0" y2="-3" width="0.127" layer="51"/>
+<wire x1="0" y1="-3" x2="0" y2="3" width="0.127" layer="51"/>
+<wire x1="0" y1="3" x2="0" y2="4.9" width="0.127" layer="51"/>
+<wire x1="0" y1="4.9" x2="11.5" y2="4.9" width="0.127" layer="51"/>
+<wire x1="11.5" y1="4.9" x2="11.5" y2="-5.3" width="0.127" layer="51"/>
+<wire x1="11.5" y1="-5.3" x2="0" y2="-5.3" width="0.127" layer="51"/>
+<wire x1="0" y1="-5.3" x2="0" y2="-3" width="0.127" layer="51"/>
+<wire x1="0" y1="-2.25" x2="0" y2="-5.3" width="0.127" layer="20"/>
+<wire x1="0" y1="-2.25" x2="1.3" y2="-2.25" width="0.127" layer="20"/>
+<wire x1="1.3" y1="-2.25" x2="1.3" y2="2.25" width="0.127" layer="20"/>
+<wire x1="1.3" y1="2.25" x2="0" y2="2.25" width="0.127" layer="20"/>
+<wire x1="0" y1="2.25" x2="0" y2="4.9" width="0.127" layer="20"/>
+<pad name="1" x="2.9" y="4.8" drill="1.016" diameter="1.778"/>
+<pad name="2" x="7.9" y="-3.6" drill="1.016" diameter="1.778"/>
+<pad name="3" x="11" y="1.6" drill="1.016" diameter="1.778"/>
+<pad name="4" x="2.9" y="-4.5" drill="1.016" diameter="1.778"/>
+<wire x1="4.7" y1="4.9" x2="11.5" y2="4.9" width="0.127" layer="21"/>
+<wire x1="11.5" y1="-5.3" x2="4" y2="-5.3" width="0.127" layer="21"/>
+<wire x1="0" y1="4.9" x2="1.2" y2="6.1" width="0.127" layer="21"/>
+<wire x1="1.2" y1="6.1" x2="3.5" y2="6.1" width="0.127" layer="21"/>
+<wire x1="3.5" y1="6.1" x2="4.7" y2="4.9" width="0.127" layer="21"/>
+<wire x1="0" y1="-5.3" x2="0.5" y2="-5.8" width="0.127" layer="21"/>
+<wire x1="0.5" y1="-5.8" x2="3.5" y2="-5.8" width="0.127" layer="21"/>
+<wire x1="3.5" y1="-5.8" x2="4" y2="-5.3" width="0.127" layer="21"/>
+<wire x1="12.3" y1="4.1" x2="12.3" y2="-4.5" width="0.127" layer="21"/>
+<wire x1="11.5" y1="4.9" x2="12.3" y2="4.1" width="0.127" layer="21"/>
+<wire x1="11.5" y1="-5.3" x2="12.3" y2="-4.5" width="0.127" layer="21"/>
+</package>
 <package name="54-00174">
 <hole x="2" y="0" drill="1.2"/>
 <hole x="9" y="0" drill="1.2"/>
@@ -645,8 +686,6 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="0" y1="-3.35" x2="-1.75" y2="-3.35" width="0.127" layer="20"/>
 <text x="-5" y="0" size="1" layer="21" ratio="10" rot="R90" align="center">&gt;NAME</text>
 <wire x1="0" y1="3.35" x2="0" y2="-3.35" width="0.127" layer="20"/>
-<wire x1="0" y1="-5.15" x2="0" y2="-5.715" width="0.127" layer="20"/>
-<wire x1="0" y1="5.15" x2="0" y2="5.715" width="0.127" layer="20"/>
 <wire x1="0" y1="-5.15" x2="0" y2="-4.15" width="0.127" layer="21"/>
 <wire x1="0" y1="5.15" x2="0" y2="4.15" width="0.127" layer="21"/>
 <smd name="1T" x="-4" y="0" dx="2.3" dy="4.3" layer="1" roundness="100" cream="no"/>
@@ -1119,8 +1158,8 @@ DIN A3, landscape with extra doc field</description>
 <text x="0" y="0" size="1" layer="51" ratio="10" align="center">&gt;NAME</text>
 </package>
 <package name="RGB-TOP">
-<pad name="GND@1" x="-24.13" y="2.54" drill="1.016" diameter="1.778"/>
-<pad name="GND@2" x="-24.13" y="0" drill="1.016" diameter="1.778"/>
+<pad name="EXT3" x="-24.13" y="2.54" drill="1.016" diameter="1.778"/>
+<pad name="GND" x="-24.13" y="0" drill="1.016" diameter="1.778"/>
 <pad name="S" x="-24.13" y="-2.54" drill="1.016" diameter="1.778"/>
 <pad name="VCC@1" x="24.13" y="2.54" drill="1.016" diameter="1.778"/>
 <pad name="VCC@2" x="24.13" y="0" drill="1.016" diameter="1.778"/>
@@ -1281,8 +1320,8 @@ DIN A3, landscape with extra doc field</description>
 <text x="0" y="-2" size="1" layer="21" ratio="10" align="center">&gt;NAME</text>
 </package>
 <package name="RGB-BOT">
-<pad name="GND@1" x="-24.13" y="2.54" drill="1.016" diameter="1.778"/>
-<pad name="GND@2" x="-24.13" y="0" drill="1.016" diameter="1.778"/>
+<pad name="EXT3" x="-24.13" y="2.54" drill="1.016" diameter="1.778"/>
+<pad name="GND" x="-24.13" y="0" drill="1.016" diameter="1.778"/>
 <pad name="S" x="-24.13" y="-2.54" drill="1.016" diameter="1.778"/>
 <pad name="VCC@1" x="24.13" y="2.54" drill="1.016" diameter="1.778"/>
 <pad name="VCC@2" x="24.13" y="0" drill="1.016" diameter="1.778"/>
@@ -1638,7 +1677,7 @@ DIN A3, landscape with extra doc field</description>
 <pin name="EXT0" x="-60.96" y="2.54" length="point" rot="R270"/>
 <pin name="EXT1" x="-63.5" y="2.54" length="point" rot="R270"/>
 <pin name="EXT2" x="-66.04" y="2.54" length="point" rot="R270"/>
-<pin name="EXT3" x="-71.12" y="2.54" length="point" rot="R270"/>
+<pin name="EXT3" x="-68.58" y="2.54" length="point" rot="R270"/>
 <pin name="GND" x="-12.7" y="2.54" length="point" rot="R270"/>
 <pin name="PA8" x="-78.74" y="2.54" length="point" rot="R270"/>
 <pin name="PA9" x="-81.28" y="2.54" length="point" rot="R270"/>
@@ -1740,7 +1779,8 @@ DIN A3, landscape with extra doc field</description>
 <pin name="GND" x="-7.62" y="-5.08" length="point"/>
 <pin name="OUT0" x="7.62" y="-2.54" length="point" rot="R180"/>
 <pin name="VCC" x="-7.62" y="-2.54" length="point"/>
-<text x="0" y="1.27" size="3.556" layer="95" rot="MR180" align="top-center">&gt;NAME</text>
+<text x="0" y="6.35" size="3.556" layer="95" rot="MR180" align="center">&gt;NAME</text>
+<text x="0" y="2.54" size="1.778" layer="95" rot="MR180" align="center">&gt;VALUE</text>
 </symbol>
 <symbol name="74X240">
 <pin name="1!OE" x="-7.62" y="-5.08" visible="pad" length="point" rot="R90"/>
@@ -1888,8 +1928,8 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="-6.985" y1="-1.27" x2="-6.985" y2="-2.54" width="0.1524" layer="94"/>
 <pin name="S" x="5.08" y="-2.54" visible="off" length="short" rot="R180"/>
 <pin name="T" x="5.08" y="2.54" visible="off" length="short" rot="R180"/>
-<text x="-11.43" y="2.032" size="3.556" layer="95" rot="R180" align="center-left">&gt;NAME</text>
-<text x="-11.43" y="-2.54" size="2.54" layer="95" rot="R180" align="center-left">&gt;VALUE</text>
+<text x="-11.43" y="1.27" size="3.556" layer="95" rot="R180" align="center-left">&gt;NAME</text>
+<text x="-11.43" y="-2.54" size="1.778" layer="95" rot="R180" align="center-left">&gt;VALUE</text>
 <wire x1="2.54" y1="5.08" x2="-10.16" y2="5.08" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="5.08" x2="-10.16" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="-5.08" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
@@ -2290,8 +2330,8 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="-9.525" y1="-6.35" x2="-9.525" y2="-7.62" width="0.1524" layer="94"/>
 <pin name="S" x="5.08" y="-7.62" visible="off" length="short" rot="R180"/>
 <pin name="T" x="5.08" y="0" visible="off" length="short" rot="R180"/>
-<text x="-13.97" y="-0.508" size="3.556" layer="95" rot="R180" align="center-left">&gt;NAME</text>
-<text x="-13.97" y="-5.08" size="2.54" layer="95" rot="R180" align="center-left">&gt;VALUE</text>
+<text x="-13.97" y="-1.27" size="3.556" layer="95" rot="R180" align="center-left">&gt;NAME</text>
+<text x="-13.97" y="-5.08" size="1.778" layer="95" rot="R180" align="center-left">&gt;VALUE</text>
 <wire x1="2.54" y1="2.54" x2="-12.7" y2="2.54" width="0.254" layer="94"/>
 <wire x1="-12.7" y1="2.54" x2="-12.7" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="-12.7" y1="-10.16" x2="2.54" y2="-10.16" width="0.254" layer="94"/>
@@ -2301,8 +2341,8 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="2.54" y1="-2.54" x2="2.54" y2="0" width="0.254" layer="94"/>
 <wire x1="2.54" y1="0" x2="2.54" y2="2.54" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
-<pin name="RO" x="5.08" y="-2.54" visible="off" length="short" rot="R180"/>
-<pin name="RI" x="5.08" y="-5.08" visible="off" length="short" rot="R180"/>
+<pin name="RT" x="5.08" y="-2.54" visible="off" length="short" rot="R180"/>
+<pin name="RS" x="5.08" y="-5.08" visible="off" length="short" rot="R180"/>
 <wire x1="2.54" y1="-5.08" x2="-5.08" y2="-5.08" width="0.1524" layer="94"/>
 <wire x1="-5.08" y1="-5.08" x2="-6.35" y2="-3.81" width="0.1524" layer="94"/>
 <wire x1="-6.35" y1="-3.81" x2="-7.62" y2="-5.08" width="0.1524" layer="94"/>
@@ -2319,8 +2359,8 @@ DIN A3, landscape with extra doc field</description>
 <pin name="VBUS" x="-7.62" y="0" length="short"/>
 <pin name="CC1" x="-7.62" y="-2.54" length="short"/>
 <pin name="CC2" x="-7.62" y="-5.08" length="short"/>
-<text x="6.35" y="-0.508" size="3.556" layer="95" rot="MR180" align="center-left">&gt;NAME</text>
-<text x="6.35" y="-5.08" size="2.54" layer="95" rot="MR180" align="center-left">&gt;VALUE</text>
+<text x="6.35" y="-1.27" size="3.556" layer="95" rot="MR180" align="center-left">&gt;NAME</text>
+<text x="6.35" y="-5.08" size="1.778" layer="95" rot="MR180" align="center-left">&gt;VALUE</text>
 </symbol>
 <symbol name="PNP">
 <wire x1="2.54" y1="2.54" x2="0" y2="0" width="0.1524" layer="94"/>
@@ -2335,6 +2375,7 @@ DIN A3, landscape with extra doc field</description>
 <vertex x="1.27" y="0.635"/>
 <vertex x="0.635" y="1.27"/>
 </polygon>
+<text x="-0.762" y="1.27" size="1.27" layer="95" align="center-right">&gt;VALUE</text>
 </symbol>
 <symbol name="NCS603">
 <pin name="EN" x="-10.16" y="-5.08" length="short"/>
@@ -2412,17 +2453,18 @@ DIN A3, landscape with extra doc field</description>
 <text x="-2.54" y="0" size="1.27" layer="96" rot="R90" align="top-center">&gt;VALUE</text>
 </symbol>
 <symbol name="RGB">
-<pin name="GND" x="12.7" y="0" visible="pin" length="point" rot="R90"/>
-<pin name="VCC" x="15.24" y="0" visible="pin" length="point" rot="R90"/>
+<pin name="GND" x="15.24" y="0" visible="pin" length="point" rot="R90"/>
+<pin name="VCC" x="17.78" y="0" visible="pin" length="point" rot="R90"/>
 <text x="-2.032" y="3.81" size="1.778" layer="96" rot="R90" align="center">&gt;NAME</text>
-<wire x1="17.78" y1="7.62" x2="17.78" y2="0" width="0.254" layer="94"/>
+<wire x1="20.32" y1="7.62" x2="20.32" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="0" y2="7.62" width="0.254" layer="94"/>
-<wire x1="0" y1="7.62" x2="17.78" y2="7.62" width="0.254" layer="94"/>
-<wire x1="17.78" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<pin name="R" x="10.16" y="0" visible="pin" length="point" rot="R90"/>
-<pin name="G" x="7.62" y="0" visible="pin" length="point" rot="R90"/>
-<pin name="B" x="5.08" y="0" visible="pin" length="point" rot="R90"/>
+<wire x1="0" y1="7.62" x2="20.32" y2="7.62" width="0.254" layer="94"/>
+<wire x1="20.32" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<pin name="R" x="12.7" y="0" visible="pin" length="point" rot="R90"/>
+<pin name="G" x="10.16" y="0" visible="pin" length="point" rot="R90"/>
+<pin name="B" x="7.62" y="0" visible="pin" length="point" rot="R90"/>
 <pin name="S" x="2.54" y="0" visible="pin" length="point" rot="R90"/>
+<pin name="EX3" x="5.08" y="0" visible="pin" length="point" rot="R90"/>
 </symbol>
 <symbol name="NOR">
 <pin name="B" x="-5.08" y="-2.54" visible="off" length="point" direction="in"/>
@@ -2844,7 +2886,7 @@ DIN A3, landscape with extra doc field</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="CTRL" prefix="H">
+<deviceset name="CTRL" prefix="H" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="CTRL" x="0" y="0"/>
 </gates>
@@ -3360,12 +3402,23 @@ DIN A3, landscape with extra doc field</description>
 <gate name="G$1" symbol="TRRS" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="54-00174">
+<device name="-54-00174" package="54-00174">
 <connects>
-<connect gate="G$1" pin="RI" pad="2B 2T"/>
-<connect gate="G$1" pin="RO" pad="3B 3T"/>
+<connect gate="G$1" pin="RS" pad="2B 2T"/>
+<connect gate="G$1" pin="RT" pad="3B 3T"/>
 <connect gate="G$1" pin="S" pad="1B 1T"/>
 <connect gate="G$1" pin="T" pad="4AB 4AT 4BB 4BT"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-SJ-43514" package="SJ-43514">
+<connects>
+<connect gate="G$1" pin="RS" pad="4"/>
+<connect gate="G$1" pin="RT" pad="3"/>
+<connect gate="G$1" pin="S" pad="1"/>
+<connect gate="G$1" pin="T" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -3391,7 +3444,7 @@ DIN A3, landscape with extra doc field</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="PNP" prefix="Q">
+<deviceset name="PNP" prefix="Q" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="PNP" x="0" y="0"/>
 </gates>
@@ -3480,8 +3533,9 @@ DIN A3, landscape with extra doc field</description>
 <device name="-TOP" package="RGB-TOP">
 <connects>
 <connect gate="G$1" pin="B" pad="B"/>
+<connect gate="G$1" pin="EX3" pad="EXT3"/>
 <connect gate="G$1" pin="G" pad="G"/>
-<connect gate="G$1" pin="GND" pad="GND@1 GND@2"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
 <connect gate="G$1" pin="R" pad="R"/>
 <connect gate="G$1" pin="S" pad="S"/>
 <connect gate="G$1" pin="VCC" pad="VCC@1 VCC@2 VCC@3"/>
@@ -3493,8 +3547,9 @@ DIN A3, landscape with extra doc field</description>
 <device name="-BOT" package="RGB-BOT">
 <connects>
 <connect gate="G$1" pin="B" pad="B"/>
+<connect gate="G$1" pin="EX3" pad="EXT3"/>
 <connect gate="G$1" pin="G" pad="G"/>
-<connect gate="G$1" pin="GND" pad="GND@1 GND@2"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
 <connect gate="G$1" pin="R" pad="R"/>
 <connect gate="G$1" pin="S" pad="S"/>
 <connect gate="G$1" pin="VCC" pad="VCC@1 VCC@2 VCC@3"/>
@@ -3565,8 +3620,8 @@ DIN A3, landscape with extra doc field</description>
 <part name="R8" library="TinyNES_Library" deviceset="RESISTOR" device="-0805" value="20k"/>
 <part name="J2" library="TinyNES_Library" deviceset="JACK" device="" value="AUDIO"/>
 <part name="J1" library="TinyNES_Library" deviceset="JACK" device="" value="VIDEO"/>
-<part name="H5" library="TinyNES_Library" deviceset="CTRL" device="" value="CTRL"/>
-<part name="H6" library="TinyNES_Library" deviceset="CTRL" device="" value="CTRL"/>
+<part name="H5" library="TinyNES_Library" deviceset="CTRL" device="" value="CTRL1"/>
+<part name="H6" library="TinyNES_Library" deviceset="CTRL" device="" value="CTRL2"/>
 <part name="R17" library="TinyNES_Library" deviceset="RESISTOR" device="-0805" value="10k"/>
 <part name="U1" library="TinyNES_Library" deviceset="BUFFER" device=""/>
 <part name="H1" library="TinyNES_Library" deviceset="CART-72" device="-CONN-VERT" value="CART"/>
@@ -3606,7 +3661,6 @@ DIN A3, landscape with extra doc field</description>
 <part name="GND6" library="TinyNES_Library" deviceset="GND" device=""/>
 <part name="GND7" library="TinyNES_Library" deviceset="GND" device=""/>
 <part name="GND9" library="TinyNES_Library" deviceset="GND" device=""/>
-<part name="GND13" library="TinyNES_Library" deviceset="GND" device=""/>
 <part name="VCC1" library="TinyNES_Library" deviceset="VCC" device=""/>
 <part name="VCC2" library="TinyNES_Library" deviceset="VCC" device=""/>
 <part name="GND14" library="TinyNES_Library" deviceset="GND" device=""/>
@@ -3642,7 +3696,7 @@ DIN A3, landscape with extra doc field</description>
 <part name="GND31" library="TinyNES_Library" deviceset="GND" device=""/>
 <part name="U19" library="TinyNES_Library" deviceset="APX811" device=""/>
 <part name="S3" library="TinyNES_Library" deviceset="SWITCH" device=""/>
-<part name="FRAME2" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="DINA3_L" device=""/>
+<part name="FRAME2" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="DINA3_L" device="" value="FRAME"/>
 <part name="GND32" library="TinyNES_Library" deviceset="GND" device=""/>
 <part name="GND33" library="TinyNES_Library" deviceset="GND" device=""/>
 <part name="VCC10" library="TinyNES_Library" deviceset="VCC" device=""/>
@@ -3727,7 +3781,7 @@ DIN A3, landscape with extra doc field</description>
 <part name="C29" library="TinyNES_Library" deviceset="CAP-NP" device="-1210" value="1u"/>
 <part name="C28" library="TinyNES_Library" deviceset="CAP-NP" device="-1210" value="1u"/>
 <part name="C27" library="TinyNES_Library" deviceset="CAP-NP" device="-1210" value="1u"/>
-<part name="J3" library="TinyNES_Library" deviceset="TRRS" device="" value="TRRS"/>
+<part name="J3" library="TinyNES_Library" deviceset="TRRS" device="-SJ-43514" value="TRRS"/>
 <part name="GND77" library="TinyNES_Library" deviceset="GND" device=""/>
 <part name="R2" library="TinyNES_Library" deviceset="RESISTOR" device="-0805" value="10k"/>
 <part name="VCC33" library="TinyNES_Library" deviceset="VCC" device=""/>
@@ -3739,7 +3793,7 @@ DIN A3, landscape with extra doc field</description>
 <part name="GND81" library="TinyNES_Library" deviceset="GND" device=""/>
 <part name="GND82" library="TinyNES_Library" deviceset="GND" device=""/>
 <part name="C22" library="TinyNES_Library" deviceset="CAP-P" device="-1206" value="10u"/>
-<part name="Q1" library="TinyNES_Library" deviceset="PNP" device=""/>
+<part name="Q1" library="TinyNES_Library" deviceset="PNP" device="" value="3906"/>
 <part name="R19" library="TinyNES_Library" deviceset="RESISTOR" device="-0805" value="300R"/>
 <part name="VCC34" library="TinyNES_Library" deviceset="VCC" device=""/>
 <part name="GND28" library="TinyNES_Library" deviceset="GND" device=""/>
@@ -3782,12 +3836,17 @@ DIN A3, landscape with extra doc field</description>
 <sheets>
 <sheet>
 <plain>
-<text x="98.425" y="10.16" size="5.08" layer="94" align="center">Y</text>
-<text x="33.02" y="10.16" size="5.08" layer="94" align="center-left">TD-TNES-Y-MB</text>
+<text x="98.425" y="10.16" size="5.08" layer="94" align="center">Z</text>
+<text x="33.02" y="10.16" size="5.08" layer="94" align="center-left">TD-TNES-Z-MB</text>
 <text x="2.54" y="33.02" size="3.175" layer="94" align="top-left">Author: Tall Dog Electronics
 License: CC BY-SA 4.0</text>
 <text x="294.64" y="225.425" size="1.27" layer="97" align="center">21.477272 MHz</text>
 <text x="294.64" y="231.775" size="1.27" layer="97" rot="R180" align="center">26.601712 MHz</text>
+<text x="281.94" y="200.66" size="1.27" layer="97" align="center">(CLK×5)</text>
+<text x="312.42" y="200.66" size="1.27" layer="97" align="center">(CLK÷2)</text>
+<text x="342.9" y="200.66" size="1.27" layer="97" align="center">(CLK÷2)</text>
+<text x="294.64" y="208.28" size="1.27" layer="97" align="center">(NTSC)</text>
+<text x="294.64" y="248.92" size="1.27" layer="97" align="center">(PAL)</text>
 </plain>
 <instances>
 <instance part="U14" gate="G$1" x="274.32" y="147.32" smashed="yes">
@@ -3856,7 +3915,6 @@ License: CC BY-SA 4.0</text>
 <instance part="GND6" gate="1" x="238.76" y="109.22" smashed="yes"/>
 <instance part="GND7" gate="1" x="248.92" y="109.22" smashed="yes"/>
 <instance part="GND9" gate="1" x="340.36" y="25.4" smashed="yes"/>
-<instance part="GND13" gate="1" x="281.94" y="25.4" smashed="yes"/>
 <instance part="VCC1" gate="G$1" x="251.46" y="129.54" smashed="yes"/>
 <instance part="VCC2" gate="G$1" x="337.82" y="129.54" smashed="yes"/>
 <instance part="GND14" gate="1" x="335.28" y="53.34" smashed="yes"/>
@@ -3883,10 +3941,12 @@ License: CC BY-SA 4.0</text>
 <instance part="VCC12" gate="G$1" x="246.38" y="78.74" smashed="yes"/>
 <instance part="GND22" gate="1" x="251.46" y="73.66" smashed="yes"/>
 <instance part="H5" gate="G$1" x="127" y="220.98" smashed="yes">
-<attribute name="NAME" x="127" y="222.25" size="3.556" layer="95" rot="MR180" align="top-center"/>
+<attribute name="NAME" x="127" y="227.33" size="3.556" layer="95" rot="MR180" align="center"/>
+<attribute name="VALUE" x="127" y="223.52" size="1.778" layer="95" rot="MR180" align="center"/>
 </instance>
 <instance part="H6" gate="G$1" x="127" y="203.2" smashed="yes">
-<attribute name="NAME" x="127" y="186.69" size="3.556" layer="95" rot="MR0" align="top-center"/>
+<attribute name="NAME" x="127" y="181.61" size="3.556" layer="95" rot="MR0" align="center"/>
+<attribute name="VALUE" x="127" y="185.42" size="1.778" layer="95" rot="MR0" align="center"/>
 </instance>
 <instance part="C33" gate="G$1" x="241.3" y="187.96" smashed="yes">
 <attribute name="NAME" x="241.3" y="190.119" size="1.778" layer="95" align="center"/>
@@ -3909,8 +3969,8 @@ License: CC BY-SA 4.0</text>
 <instance part="GND25" gate="1" x="116.84" y="213.36" smashed="yes"/>
 <instance part="GND26" gate="1" x="116.84" y="195.58" smashed="yes"/>
 <instance part="J1" gate="G$1" x="129.54" y="48.26" smashed="yes">
-<attribute name="NAME" x="118.11" y="50.292" size="3.556" layer="95" rot="R180" align="center-left"/>
-<attribute name="VALUE" x="118.11" y="45.72" size="2.54" layer="95" rot="R180" align="center-left"/>
+<attribute name="NAME" x="118.11" y="49.53" size="3.556" layer="95" rot="R180" align="center-left"/>
+<attribute name="VALUE" x="118.11" y="45.72" size="1.778" layer="95" rot="R180" align="center-left"/>
 </instance>
 <instance part="R21" gate="G$1" x="157.48" y="50.8" smashed="yes" rot="MR0">
 <attribute name="NAME" x="157.48" y="51.816" size="1.778" layer="95" rot="MR0" align="bottom-center"/>
@@ -3949,8 +4009,8 @@ License: CC BY-SA 4.0</text>
 <attribute name="VALUE" x="125.476" y="162.56" size="1.27" layer="96" rot="R90" align="top-center"/>
 </instance>
 <instance part="J2" gate="G$1" x="48.26" y="165.1" smashed="yes">
-<attribute name="NAME" x="36.83" y="167.132" size="3.556" layer="95" rot="R180" align="center-left"/>
-<attribute name="VALUE" x="36.83" y="162.56" size="2.54" layer="95" rot="R180" align="center-left"/>
+<attribute name="NAME" x="36.83" y="166.37" size="3.556" layer="95" rot="R180" align="center-left"/>
+<attribute name="VALUE" x="36.83" y="162.56" size="1.778" layer="95" rot="R180" align="center-left"/>
 </instance>
 <instance part="R22" gate="G$1" x="58.42" y="167.64" smashed="yes" rot="MR0">
 <attribute name="NAME" x="58.42" y="168.656" size="1.778" layer="95" rot="MR0" align="bottom-center"/>
@@ -4193,8 +4253,8 @@ License: CC BY-SA 4.0</text>
 <attribute name="VALUE" x="59.69" y="133.35" size="1.27" layer="96" rot="MR180" align="center-left"/>
 </instance>
 <instance part="J3" gate="G$1" x="48.26" y="137.16" smashed="yes">
-<attribute name="NAME" x="34.29" y="136.652" size="3.556" layer="95" rot="R180" align="center-left"/>
-<attribute name="VALUE" x="34.29" y="132.08" size="2.54" layer="95" rot="R180" align="center-left"/>
+<attribute name="NAME" x="34.29" y="135.89" size="3.556" layer="95" rot="R180" align="center-left"/>
+<attribute name="VALUE" x="34.29" y="132.08" size="1.778" layer="95" rot="R180" align="center-left"/>
 </instance>
 <instance part="GND77" gate="1" x="53.34" y="127" smashed="yes" rot="MR0"/>
 <instance part="R2" gate="G$1" x="248.92" y="58.42" smashed="yes" rot="R90">
@@ -4204,8 +4264,8 @@ License: CC BY-SA 4.0</text>
 <instance part="VCC33" gate="G$1" x="248.92" y="63.5" smashed="yes"/>
 <instance part="GND80" gate="1" x="172.72" y="40.64" smashed="yes"/>
 <instance part="J4" gate="G$1" x="33.02" y="73.66" smashed="yes" rot="MR0">
-<attribute name="NAME" x="26.67" y="73.152" size="3.556" layer="95" rot="R180" align="center-left"/>
-<attribute name="VALUE" x="26.67" y="68.58" size="2.54" layer="95" rot="R180" align="center-left"/>
+<attribute name="NAME" x="26.67" y="72.39" size="3.556" layer="95" rot="R180" align="center-left"/>
+<attribute name="VALUE" x="26.67" y="68.58" size="1.778" layer="95" rot="R180" align="center-left"/>
 </instance>
 <instance part="GND45" gate="1" x="43.18" y="63.5" smashed="yes"/>
 <instance part="R24" gate="G$1" x="50.8" y="63.5" smashed="yes" rot="R90">
@@ -4224,6 +4284,7 @@ License: CC BY-SA 4.0</text>
 </instance>
 <instance part="Q1" gate="G$1" x="175.26" y="45.72" smashed="yes" rot="MR0">
 <attribute name="NAME" x="176.022" y="44.196" size="1.778" layer="95" rot="MR0" align="center-right"/>
+<attribute name="VALUE" x="176.022" y="46.99" size="1.27" layer="95" rot="MR0" align="center-right"/>
 </instance>
 <instance part="R19" gate="G$1" x="172.72" y="55.88" smashed="yes" rot="MR270">
 <attribute name="NAME" x="171.704" y="55.88" size="1.778" layer="95" rot="MR270" align="bottom-center"/>
@@ -4300,8 +4361,8 @@ License: CC BY-SA 4.0</text>
 <attribute name="NAME" x="109.22" y="141.478" size="1.778" layer="95" rot="R180" align="bottom-center"/>
 <attribute name="VALUE" x="109.22" y="142.24" size="1.27" layer="96" rot="R180" align="top-center"/>
 </instance>
-<instance part="RGB" gate="G$1" x="281.94" y="43.18" smashed="yes">
-<attribute name="NAME" x="279.908" y="46.99" size="1.778" layer="96" rot="R90" align="center"/>
+<instance part="RGB" gate="G$1" x="279.4" y="43.18" smashed="yes">
+<attribute name="NAME" x="277.368" y="46.99" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
 <instance part="GND11" gate="1" x="294.64" y="40.64" smashed="yes"/>
 <instance part="VCC19" gate="G$1" x="297.18" y="53.34" smashed="yes"/>
@@ -4632,11 +4693,6 @@ License: CC BY-SA 4.0</text>
 <pinref part="U14" gate="G$1" pin="TST"/>
 <pinref part="GND1" gate="1" pin="GND"/>
 <wire x1="259.08" y1="149.86" x2="259.08" y2="137.16" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="U16" gate="G$1" pin="EXT3"/>
-<pinref part="GND13" gate="1" pin="GND"/>
-<wire x1="281.94" y1="38.1" x2="281.94" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U13" gate="G$1" pin="GND"/>
@@ -6222,7 +6278,7 @@ License: CC BY-SA 4.0</text>
 <segment>
 <pinref part="C28" gate="G$1" pin="2"/>
 <wire x1="55.88" y1="134.62" x2="53.34" y2="134.62" width="0.1524" layer="91"/>
-<pinref part="J3" gate="G$1" pin="RO"/>
+<pinref part="J3" gate="G$1" pin="RT"/>
 </segment>
 </net>
 <net name="EXP6-OUT" class="0">
@@ -6284,7 +6340,8 @@ License: CC BY-SA 4.0</text>
 <wire x1="198.12" y1="190.5" x2="198.12" y2="182.88" width="0.1524" layer="91"/>
 <junction x="198.12" y="190.5"/>
 <pinref part="C30" gate="G$1" pin="2"/>
-<wire x1="198.12" y1="223.52" x2="198.12" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="223.52" x2="198.12" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="205.74" x2="198.12" y2="190.5" width="0.1524" layer="91"/>
 <wire x1="149.86" y1="223.52" x2="149.86" y2="190.5" width="0.1524" layer="91"/>
 <pinref part="U14" gate="G$1" pin="!OE2"/>
 <pinref part="U17" gate="G$1" pin="2!OE"/>
@@ -6293,9 +6350,8 @@ License: CC BY-SA 4.0</text>
 <wire x1="251.46" y1="167.64" x2="215.9" y2="167.64" width="0.1524" layer="91"/>
 <wire x1="251.46" y1="167.64" x2="251.46" y2="205.74" width="0.1524" layer="91"/>
 <junction x="251.46" y="167.64"/>
-<wire x1="251.46" y1="205.74" x2="200.66" y2="205.74" width="0.1524" layer="91"/>
-<wire x1="198.12" y1="190.5" x2="200.66" y2="190.5" width="0.1524" layer="91"/>
-<wire x1="200.66" y1="190.5" x2="200.66" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="251.46" y1="205.74" x2="198.12" y2="205.74" width="0.1524" layer="91"/>
+<junction x="198.12" y="205.74"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -6344,9 +6400,9 @@ License: CC BY-SA 4.0</text>
 <wire x1="142.24" y1="50.8" x2="134.62" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="50.8" x2="142.24" y2="22.86" width="0.1524" layer="91"/>
 <junction x="142.24" y="50.8"/>
-<wire x1="142.24" y1="22.86" x2="284.48" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="22.86" x2="281.94" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="RGB" gate="G$1" pin="S"/>
-<wire x1="284.48" y1="22.86" x2="284.48" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="281.94" y1="22.86" x2="281.94" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -6417,7 +6473,7 @@ License: CC BY-SA 4.0</text>
 </net>
 <net name="N$12" class="0">
 <segment>
-<pinref part="J3" gate="G$1" pin="RI"/>
+<pinref part="J3" gate="G$1" pin="RS"/>
 <wire x1="53.34" y1="132.08" x2="55.88" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="C27" gate="G$1" pin="2"/>
 </segment>
@@ -6516,12 +6572,16 @@ License: CC BY-SA 4.0</text>
 <pinref part="U22" gate="G$1" pin="Y"/>
 </segment>
 </net>
+<net name="EXT3" class="0">
+<segment>
+<pinref part="U16" gate="G$1" pin="EXT3"/>
+<pinref part="RGB" gate="G$1" pin="EX3"/>
+<wire x1="284.48" y1="38.1" x2="284.48" y2="43.18" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
-<errors>
-<approved hash="113,1,194.206,131.976,FRAME2,,,,,"/>
-</errors>
 </schematic>
 </drawing>
 <compatibility>
