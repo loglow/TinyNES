@@ -325,6 +325,10 @@ DIN A3, landscape with extra doc field</description>
 <text x="0" y="0" size="1" layer="51" ratio="10" rot="R90" align="center">&gt;NAME</text>
 <wire x1="-5.7" y1="24.7" x2="-2.5" y2="24.7" width="0.5" layer="21"/>
 <wire x1="2.5" y1="24.7" x2="5.7" y2="24.7" width="0.5" layer="21"/>
+<wire x1="-6.35" y1="8.89" x2="6.35" y2="8.89" width="0.127" layer="21"/>
+<wire x1="6.35" y1="6.35" x2="-6.35" y2="6.35" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="-8.89" x2="6.35" y2="-8.89" width="0.127" layer="21"/>
+<wire x1="6.35" y1="-6.35" x2="-6.35" y2="-6.35" width="0.127" layer="21"/>
 </package>
 <package name="SOIC-16">
 <circle x="-5.25" y="-2.15" radius="0.25" width="0" layer="21"/>
@@ -1458,6 +1462,24 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="22.86" y1="-1.905" x2="22.86" y2="-3.175" width="0.127" layer="52"/>
 <wire x1="22.86" y1="-3.175" x2="23.495" y2="-3.81" width="0.127" layer="52"/>
 </package>
+<package name="CABLE-PAD">
+<text x="3.175" y="0" size="1.5" layer="21" ratio="10" align="center-left">&gt;NAME</text>
+<smd name="P" x="0" y="0" dx="5.08" dy="1.651" layer="1" cream="no"/>
+</package>
+<package name="0603-NP">
+<wire x1="-1.4" y1="-0.65" x2="-1.4" y2="0.65" width="0.127" layer="51"/>
+<wire x1="-1.4" y1="0.65" x2="1.4" y2="0.65" width="0.127" layer="51"/>
+<wire x1="1.4" y1="0.65" x2="1.4" y2="-0.65" width="0.127" layer="51"/>
+<wire x1="1.4" y1="-0.65" x2="-1.4" y2="-0.65" width="0.127" layer="51"/>
+<wire x1="1.4" y1="0.65" x2="-1.4" y2="0.65" width="0.127" layer="21"/>
+<wire x1="1.4" y1="-0.65" x2="-1.4" y2="-0.65" width="0.127" layer="21"/>
+<wire x1="-1.4" y1="0.65" x2="-1.4" y2="-0.65" width="0.127" layer="21"/>
+<wire x1="1.4" y1="0.65" x2="1.4" y2="-0.65" width="0.127" layer="21"/>
+<smd name="1" x="-0.81" y="0" dx="0.81" dy="0.93" layer="1" rot="R180"/>
+<smd name="2" x="0.81" y="0" dx="0.81" dy="0.93" layer="1"/>
+<text x="0" y="0" size="1" layer="21" ratio="10" align="center">&gt;NAME</text>
+<text x="0" y="0" size="0.75" layer="51" ratio="12" rot="R180" align="center">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="CAP-NP">
@@ -2582,6 +2604,15 @@ DIN A3, landscape with extra doc field</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="-0603" package="0603-NP">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="BUFFER" prefix="U">
@@ -3106,6 +3137,14 @@ DIN A3, landscape with extra doc field</description>
 <device name="" package="PTH-STRAIN">
 <connects>
 <connect gate="G$1" pin="P$1" pad="A P"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-CABLE-PAD" package="CABLE-PAD">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -3832,12 +3871,20 @@ DIN A3, landscape with extra doc field</description>
 <part name="VCC29" library="TinyNES_Library" deviceset="VCC" device=""/>
 <part name="GND38" library="TinyNES_Library" deviceset="GND" device=""/>
 <part name="GND39" library="TinyNES_Library" deviceset="GND" device=""/>
+<part name="R28" library="TinyNES_Library" deviceset="RESISTOR" device="-0603" value="1M"/>
+<part name="R27" library="TinyNES_Library" deviceset="RESISTOR" device="-0603" value="1M"/>
+<part name="R26" library="TinyNES_Library" deviceset="RESISTOR" device="-0603" value="1M"/>
+<part name="R25" library="TinyNES_Library" deviceset="RESISTOR" device="-0603" value="1M"/>
+<part name="GND13" library="TinyNES_Library" deviceset="GND" device=""/>
+<part name="GND40" library="TinyNES_Library" deviceset="GND" device=""/>
+<part name="GND41" library="TinyNES_Library" deviceset="GND" device=""/>
+<part name="GND42" library="TinyNES_Library" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="98.425" y="10.16" size="5.08" layer="94" align="center">Z</text>
-<text x="33.02" y="10.16" size="5.08" layer="94" align="center-left">TD-TNES-Z-MB</text>
+<text x="100.33" y="6.35" size="3.81" layer="94" ratio="10" align="bottom-right">27</text>
+<text x="33.02" y="10.16" size="5.08" layer="94" align="center-left">TD-TNES-27-MB</text>
 <text x="2.54" y="33.02" size="3.175" layer="94" align="top-left">Author: Tall Dog Electronics
 License: CC BY-SA 4.0</text>
 <text x="294.64" y="225.425" size="1.27" layer="97" align="center">21.477272 MHz</text>
@@ -4387,6 +4434,26 @@ License: CC BY-SA 4.0</text>
 <instance part="VCC29" gate="G$1" x="193.04" y="58.42" smashed="yes"/>
 <instance part="GND38" gate="1" x="200.66" y="53.34" smashed="yes"/>
 <instance part="GND39" gate="1" x="200.66" y="68.58" smashed="yes"/>
+<instance part="R28" gate="G$1" x="292.1" y="20.32" smashed="yes" rot="R90">
+<attribute name="NAME" x="293.37" y="19.05" size="1.27" layer="95" ratio="12" rot="R90" align="center-right"/>
+<attribute name="VALUE" x="293.37" y="21.59" size="1.27" layer="96" rot="R90" align="center-left"/>
+</instance>
+<instance part="R27" gate="G$1" x="289.56" y="20.32" smashed="yes" rot="R90">
+<attribute name="NAME" x="290.83" y="19.05" size="1.27" layer="95" ratio="12" rot="R90" align="center-right"/>
+<attribute name="VALUE" x="290.83" y="21.59" size="1.27" layer="96" rot="R90" align="center-left"/>
+</instance>
+<instance part="R26" gate="G$1" x="287.02" y="20.32" smashed="yes" rot="R90">
+<attribute name="NAME" x="288.29" y="19.05" size="1.27" layer="95" ratio="12" rot="R90" align="center-right"/>
+<attribute name="VALUE" x="288.29" y="21.59" size="1.27" layer="96" rot="R90" align="center-left"/>
+</instance>
+<instance part="R25" gate="G$1" x="284.48" y="20.32" smashed="yes" rot="R90">
+<attribute name="NAME" x="285.75" y="19.05" size="1.27" layer="95" ratio="12" rot="R90" align="center-right"/>
+<attribute name="VALUE" x="285.75" y="21.59" size="1.27" layer="96" rot="R90" align="center-left"/>
+</instance>
+<instance part="GND13" gate="1" x="284.48" y="15.24" smashed="yes"/>
+<instance part="GND40" gate="1" x="287.02" y="15.24" smashed="yes"/>
+<instance part="GND41" gate="1" x="289.56" y="15.24" smashed="yes"/>
+<instance part="GND42" gate="1" x="292.1" y="15.24" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -5124,6 +5191,26 @@ License: CC BY-SA 4.0</text>
 <wire x1="200.66" y1="71.12" x2="200.66" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="GND39" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="R25" gate="G$1" pin="1"/>
+<wire x1="284.48" y1="17.78" x2="284.48" y2="15.24" width="0.1524" layer="91"/>
+<pinref part="GND13" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="R26" gate="G$1" pin="1"/>
+<wire x1="287.02" y1="17.78" x2="287.02" y2="15.24" width="0.1524" layer="91"/>
+<pinref part="GND40" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="R27" gate="G$1" pin="1"/>
+<wire x1="289.56" y1="17.78" x2="289.56" y2="15.24" width="0.1524" layer="91"/>
+<pinref part="GND41" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="R28" gate="G$1" pin="1"/>
+<wire x1="292.1" y1="17.78" x2="292.1" y2="15.24" width="0.1524" layer="91"/>
+<pinref part="GND42" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="PA13" class="0">
 <segment>
@@ -5578,7 +5665,7 @@ License: CC BY-SA 4.0</text>
 <wire x1="104.14" y1="233.68" x2="104.14" y2="231.14" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="AUDIO2" class="0">
+<net name="AUDIO2-DC" class="0">
 <segment>
 <wire x1="66.04" y1="134.62" x2="60.96" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="C28" gate="G$1" pin="1"/>
@@ -5594,7 +5681,7 @@ License: CC BY-SA 4.0</text>
 <wire x1="66.04" y1="152.4" x2="66.04" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="AUDIO1" class="0">
+<net name="AUDIO1-DC" class="0">
 <segment>
 <pinref part="R9" gate="G$1" pin="2"/>
 <pinref part="R8" gate="G$1" pin="1"/>
@@ -5974,7 +6061,7 @@ License: CC BY-SA 4.0</text>
 <junction x="368.3" y="137.16"/>
 </segment>
 </net>
-<net name="AUDIO-MIX1" class="0">
+<net name="AUDIO-MIX-1" class="0">
 <segment>
 <wire x1="99.06" y1="170.18" x2="96.52" y2="170.18" width="0.1524" layer="91"/>
 <pinref part="C10" gate="G$1" pin="1"/>
@@ -5997,7 +6084,7 @@ License: CC BY-SA 4.0</text>
 <junction x="109.22" y="170.18"/>
 </segment>
 </net>
-<net name="AUDIO-OUT" class="0">
+<net name="AUDIO-MIX-AC" class="0">
 <segment>
 <pinref part="R22" gate="G$1" pin="2"/>
 <wire x1="55.88" y1="167.64" x2="53.34" y2="167.64" width="0.1524" layer="91"/>
@@ -6069,7 +6156,7 @@ License: CC BY-SA 4.0</text>
 <junction x="274.32" y="228.6"/>
 </segment>
 </net>
-<net name="CLK" class="0">
+<net name="CLK-NTSC" class="0">
 <segment>
 <pinref part="U8" gate="G$1" pin="OUT"/>
 <pinref part="S1" gate="G$1" pin="6"/>
@@ -6267,21 +6354,21 @@ License: CC BY-SA 4.0</text>
 <pinref part="C16" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="AUDIO1-OUT" class="0">
+<net name="AUDIO1-AC" class="0">
 <segment>
 <pinref part="C29" gate="G$1" pin="2"/>
 <wire x1="55.88" y1="137.16" x2="53.34" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="J3" gate="G$1" pin="T"/>
 </segment>
 </net>
-<net name="AUDIO2-OUT" class="0">
+<net name="AUDIO2-AC" class="0">
 <segment>
 <pinref part="C28" gate="G$1" pin="2"/>
 <wire x1="55.88" y1="134.62" x2="53.34" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="J3" gate="G$1" pin="RT"/>
 </segment>
 </net>
-<net name="EXP6-OUT" class="0">
+<net name="EXP6-DC" class="0">
 <segment>
 <pinref part="U12" gate="B" pin="OUT"/>
 <wire x1="71.12" y1="132.08" x2="68.58" y2="132.08" width="0.1524" layer="91"/>
@@ -6354,7 +6441,7 @@ License: CC BY-SA 4.0</text>
 <junction x="198.12" y="205.74"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="CC2" class="0">
 <segment>
 <pinref part="J4" gate="G$1" pin="CC2"/>
 <pinref part="R24" gate="G$1" pin="2"/>
@@ -6362,7 +6449,7 @@ License: CC BY-SA 4.0</text>
 <wire x1="50.8" y1="68.58" x2="50.8" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="CC1" class="0">
 <segment>
 <pinref part="J4" gate="G$1" pin="CC1"/>
 <pinref part="R23" gate="G$1" pin="2"/>
@@ -6370,7 +6457,7 @@ License: CC BY-SA 4.0</text>
 <wire x1="58.42" y1="71.12" x2="58.42" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="VIDEO1" class="0">
 <segment>
 <pinref part="Q1" gate="G$1" pin="E"/>
 <wire x1="172.72" y1="48.26" x2="172.72" y2="50.8" width="0.1524" layer="91"/>
@@ -6381,14 +6468,14 @@ License: CC BY-SA 4.0</text>
 <junction x="172.72" y="50.8"/>
 </segment>
 </net>
-<net name="N$5" class="0">
+<net name="VIDEO2" class="0">
 <segment>
 <pinref part="C31" gate="G$1" pin="C"/>
 <wire x1="162.56" y1="50.8" x2="160.02" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="R21" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="N$6" class="0">
+<net name="VIDEO-OUT" class="0">
 <segment>
 <pinref part="R21" gate="G$1" pin="2"/>
 <wire x1="154.94" y1="50.8" x2="149.86" y2="50.8" width="0.1524" layer="91"/>
@@ -6405,7 +6492,7 @@ License: CC BY-SA 4.0</text>
 <wire x1="281.94" y1="22.86" x2="281.94" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$8" class="0">
+<net name="AUDIO-MIX-2" class="0">
 <segment>
 <wire x1="81.28" y1="177.8" x2="88.9" y2="177.8" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="177.8" x2="88.9" y2="170.18" width="0.1524" layer="91"/>
@@ -6417,7 +6504,7 @@ License: CC BY-SA 4.0</text>
 <pinref part="U12" gate="A" pin="-"/>
 </segment>
 </net>
-<net name="N$13" class="0">
+<net name="CN" class="0">
 <segment>
 <pinref part="C11" gate="G$1" pin="1"/>
 <pinref part="U12" gate="C" pin="CN"/>
@@ -6425,7 +6512,7 @@ License: CC BY-SA 4.0</text>
 <wire x1="68.58" y1="88.9" x2="76.2" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$10" class="0">
+<net name="AUDIO-MIX-DC" class="0">
 <segment>
 <pinref part="R14" gate="G$1" pin="2"/>
 <wire x1="68.58" y1="177.8" x2="76.2" y2="177.8" width="0.1524" layer="91"/>
@@ -6437,7 +6524,7 @@ License: CC BY-SA 4.0</text>
 <wire x1="68.58" y1="167.64" x2="68.58" y2="177.8" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="CP" class="0">
 <segment>
 <pinref part="U12" gate="C" pin="CP"/>
 <wire x1="88.9" y1="88.9" x2="88.9" y2="96.52" width="0.1524" layer="91"/>
@@ -6445,21 +6532,21 @@ License: CC BY-SA 4.0</text>
 <wire x1="81.28" y1="88.9" x2="88.9" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$9" class="0">
+<net name="GND-CAP" class="0">
 <segment>
 <pinref part="C12" gate="G$1" pin="2"/>
 <pinref part="U12" gate="C" pin="VSS"/>
 <wire x1="66.04" y1="104.14" x2="68.58" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$11" class="0">
+<net name="EXP6-1" class="0">
 <segment>
 <pinref part="R13" gate="G$1" pin="1"/>
 <wire x1="96.52" y1="134.62" x2="99.06" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="C16" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="N$7" class="0">
+<net name="EXP6-2" class="0">
 <segment>
 <pinref part="U12" gate="B" pin="-"/>
 <pinref part="R13" gate="G$1" pin="2"/>
@@ -6471,14 +6558,14 @@ License: CC BY-SA 4.0</text>
 <pinref part="R12" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="N$12" class="0">
+<net name="EXP6-AC" class="0">
 <segment>
 <pinref part="J3" gate="G$1" pin="RS"/>
 <wire x1="53.34" y1="132.08" x2="55.88" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="C27" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="N$15" class="0">
+<net name="D1-PULLUP" class="0">
 <segment>
 <pinref part="U17" gate="G$1" pin="2A4"/>
 <wire x1="205.74" y1="182.88" x2="205.74" y2="187.96" width="0.1524" layer="91"/>
@@ -6491,35 +6578,44 @@ License: CC BY-SA 4.0</text>
 <junction x="218.44" y="187.96"/>
 </segment>
 </net>
-<net name="B" class="0">
+<net name="RGB-BLUE" class="0">
 <segment>
 <pinref part="U16" gate="G$1" pin="EXT2"/>
 <wire x1="287.02" y1="38.1" x2="287.02" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="RGB" gate="G$1" pin="B"/>
+<pinref part="R26" gate="G$1" pin="2"/>
+<wire x1="287.02" y1="38.1" x2="287.02" y2="22.86" width="0.1524" layer="91"/>
+<junction x="287.02" y="38.1"/>
 </segment>
 </net>
-<net name="G" class="0">
+<net name="RGB-GREEN" class="0">
 <segment>
 <pinref part="U16" gate="G$1" pin="EXT1"/>
 <wire x1="289.56" y1="38.1" x2="289.56" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="RGB" gate="G$1" pin="G"/>
+<pinref part="R27" gate="G$1" pin="2"/>
+<wire x1="289.56" y1="38.1" x2="289.56" y2="22.86" width="0.1524" layer="91"/>
+<junction x="289.56" y="38.1"/>
 </segment>
 </net>
-<net name="R" class="0">
+<net name="RGB-RED" class="0">
 <segment>
 <pinref part="U16" gate="G$1" pin="EXT0"/>
 <wire x1="292.1" y1="38.1" x2="292.1" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="RGB" gate="G$1" pin="R"/>
+<pinref part="R28" gate="G$1" pin="2"/>
+<wire x1="292.1" y1="38.1" x2="292.1" y2="22.86" width="0.1524" layer="91"/>
+<junction x="292.1" y="38.1"/>
 </segment>
 </net>
-<net name="N$14" class="0">
+<net name="EXP6-MIX" class="0">
 <segment>
 <pinref part="R11" gate="G$1" pin="1"/>
 <wire x1="109.22" y1="147.32" x2="109.22" y2="160.02" width="0.1524" layer="91"/>
 <pinref part="P1" gate="G$1" pin="WIPER"/>
 </segment>
 </net>
-<net name="N$16" class="0">
+<net name="VDD-NTSC" class="0">
 <segment>
 <pinref part="S1" gate="G$1" pin="3"/>
 <wire x1="281.94" y1="226.06" x2="281.94" y2="220.98" width="0.1524" layer="91"/>
@@ -6527,7 +6623,7 @@ License: CC BY-SA 4.0</text>
 <pinref part="U8" gate="G$1" pin="VDD"/>
 </segment>
 </net>
-<net name="N$17" class="0">
+<net name="VDD-PAL" class="0">
 <segment>
 <pinref part="S1" gate="G$1" pin="1"/>
 <wire x1="281.94" y1="231.14" x2="281.94" y2="236.22" width="0.1524" layer="91"/>
@@ -6535,14 +6631,14 @@ License: CC BY-SA 4.0</text>
 <pinref part="U2" gate="G$1" pin="VDD"/>
 </segment>
 </net>
-<net name="N$18" class="0">
+<net name="CLK-FIN" class="0">
 <segment>
 <pinref part="S1" gate="G$1" pin="5"/>
 <wire x1="312.42" y1="228.6" x2="322.58" y2="228.6" width="0.1524" layer="91"/>
 <pinref part="U7" gate="G$1" pin="FIN"/>
 </segment>
 </net>
-<net name="N$19" class="0">
+<net name="CLK-PAL" class="0">
 <segment>
 <pinref part="S1" gate="G$1" pin="4"/>
 <pinref part="U2" gate="G$1" pin="OUT"/>
@@ -6550,21 +6646,21 @@ License: CC BY-SA 4.0</text>
 <wire x1="307.34" y1="236.22" x2="304.8" y2="236.22" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$20" class="0">
+<net name="A0-NOR" class="0">
 <segment>
 <wire x1="195.58" y1="66.04" x2="195.58" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="U21" gate="G$1" pin="Y"/>
 <pinref part="U22" gate="G$1" pin="A"/>
 </segment>
 </net>
-<net name="N$21" class="0">
+<net name="A0-PPU" class="0">
 <segment>
 <pinref part="S5" gate="G$1" pin="2"/>
 <pinref part="U16" gate="G$1" pin="A0"/>
 <wire x1="200.66" y1="40.64" x2="200.66" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$22" class="0">
+<net name="A0-XOR" class="0">
 <segment>
 <pinref part="S5" gate="G$1" pin="3"/>
 <wire x1="198.12" y1="45.72" x2="195.58" y2="45.72" width="0.1524" layer="91"/>
@@ -6577,6 +6673,9 @@ License: CC BY-SA 4.0</text>
 <pinref part="U16" gate="G$1" pin="EXT3"/>
 <pinref part="RGB" gate="G$1" pin="EX3"/>
 <wire x1="284.48" y1="38.1" x2="284.48" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="R25" gate="G$1" pin="2"/>
+<wire x1="284.48" y1="38.1" x2="284.48" y2="22.86" width="0.1524" layer="91"/>
+<junction x="284.48" y="38.1"/>
 </segment>
 </net>
 </nets>

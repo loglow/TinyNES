@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="25" altunitdist="mil" altunit="mil"/>
+<grid distance="0.25" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -149,6 +149,10 @@
 <text x="0" y="0" size="1" layer="51" ratio="10" rot="R90" align="center">&gt;NAME</text>
 <wire x1="-5.7" y1="24.7" x2="-2.5" y2="24.7" width="0.5" layer="21"/>
 <wire x1="2.5" y1="24.7" x2="5.7" y2="24.7" width="0.5" layer="21"/>
+<wire x1="-6.35" y1="8.89" x2="6.35" y2="8.89" width="0.127" layer="21"/>
+<wire x1="6.35" y1="6.35" x2="-6.35" y2="6.35" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="-8.89" x2="6.35" y2="-8.89" width="0.127" layer="21"/>
+<wire x1="6.35" y1="-6.35" x2="-6.35" y2="-6.35" width="0.127" layer="21"/>
 </package>
 <package name="ECAP-B">
 <wire x1="-2.1" y1="-2.1" x2="-2.1" y2="2.1" width="0.127" layer="21"/>
@@ -6361,6 +6365,176 @@ ON TOP SIDE</text>
 <text x="3.175" y="0" size="1.5" layer="21" ratio="10" align="center-left">&gt;NAME</text>
 <smd name="P" x="0" y="0" dx="5.08" dy="1.651" layer="1" cream="no"/>
 </package>
+<package name="0603-NP">
+<wire x1="-1.4" y1="-0.65" x2="-1.4" y2="0.65" width="0.127" layer="51"/>
+<wire x1="-1.4" y1="0.65" x2="1.4" y2="0.65" width="0.127" layer="51"/>
+<wire x1="1.4" y1="0.65" x2="1.4" y2="-0.65" width="0.127" layer="51"/>
+<wire x1="1.4" y1="-0.65" x2="-1.4" y2="-0.65" width="0.127" layer="51"/>
+<wire x1="1.4" y1="0.65" x2="-1.4" y2="0.65" width="0.127" layer="21"/>
+<wire x1="1.4" y1="-0.65" x2="-1.4" y2="-0.65" width="0.127" layer="21"/>
+<wire x1="-1.4" y1="0.65" x2="-1.4" y2="-0.65" width="0.127" layer="21"/>
+<wire x1="1.4" y1="0.65" x2="1.4" y2="-0.65" width="0.127" layer="21"/>
+<smd name="1" x="-0.81" y="0" dx="0.81" dy="0.93" layer="1" rot="R180"/>
+<smd name="2" x="0.81" y="0" dx="0.81" dy="0.93" layer="1"/>
+<text x="0" y="0" size="1" layer="21" ratio="10" align="center">&gt;NAME</text>
+<text x="0" y="0" size="0.75" layer="51" ratio="12" rot="R180" align="center">&gt;NAME</text>
+</package>
+<package name="_PIXEL-ART-LEAF">
+<circle x="0" y="-3.75" radius="0.2" width="0" layer="29"/>
+<circle x="0.5" y="-3.75" radius="0.2" width="0" layer="29"/>
+<circle x="0.5" y="3.75" radius="0.2" width="0" layer="29"/>
+<circle x="0" y="3.75" radius="0.2" width="0" layer="29"/>
+<circle x="-0.5" y="3.75" radius="0.2" width="0" layer="29"/>
+<circle x="-1" y="3.25" radius="0.2" width="0" layer="29"/>
+<circle x="-1.5" y="2.75" radius="0.2" width="0" layer="29"/>
+<circle x="-2" y="2.25" radius="0.2" width="0" layer="29"/>
+<circle x="-2.5" y="1.75" radius="0.2" width="0" layer="29"/>
+<circle x="-2.5" y="1.25" radius="0.2" width="0" layer="29"/>
+<circle x="-3" y="0.75" radius="0.2" width="0" layer="29"/>
+<circle x="-3" y="0.25" radius="0.2" width="0" layer="29"/>
+<circle x="-3.5" y="-0.25" radius="0.2" width="0" layer="29"/>
+<circle x="-3.5" y="-0.75" radius="0.2" width="0" layer="29"/>
+<circle x="-3.5" y="-1.25" radius="0.2" width="0" layer="29"/>
+<circle x="1" y="3.25" radius="0.2" width="0" layer="29"/>
+<circle x="1.5" y="2.75" radius="0.2" width="0" layer="29"/>
+<circle x="2" y="2.25" radius="0.2" width="0" layer="29"/>
+<circle x="2.5" y="1.75" radius="0.2" width="0" layer="29"/>
+<circle x="2.5" y="1.25" radius="0.2" width="0" layer="29"/>
+<circle x="3" y="0.75" radius="0.2" width="0" layer="29"/>
+<circle x="3" y="0.25" radius="0.2" width="0" layer="29"/>
+<circle x="3.5" y="-0.25" radius="0.2" width="0" layer="29"/>
+<circle x="3.5" y="-0.75" radius="0.2" width="0" layer="29"/>
+<circle x="3.5" y="-1.25" radius="0.2" width="0" layer="29"/>
+<circle x="3" y="-1.75" radius="0.2" width="0" layer="29"/>
+<circle x="-3" y="-1.75" radius="0.2" width="0" layer="29"/>
+<circle x="-2.5" y="-2.25" radius="0.2" width="0" layer="29"/>
+<circle x="-2" y="-2.25" radius="0.2" width="0" layer="29"/>
+<circle x="2.5" y="-2.25" radius="0.2" width="0" layer="29"/>
+<circle x="2" y="-2.25" radius="0.2" width="0" layer="29"/>
+<circle x="-1.5" y="-2.75" radius="0.2" width="0" layer="29"/>
+<circle x="-1" y="-2.75" radius="0.2" width="0" layer="29"/>
+<circle x="-0.5" y="-2.75" radius="0.2" width="0" layer="29"/>
+<circle x="1.5" y="-2.75" radius="0.2" width="0" layer="29"/>
+<circle x="1" y="-2.75" radius="0.2" width="0" layer="29"/>
+<circle x="0.5" y="-2.75" radius="0.2" width="0" layer="29"/>
+<circle x="-0.5" y="-3.75" radius="0.2" width="0" layer="29"/>
+<circle x="-0.5" y="-3.25" radius="0.2" width="0" layer="29"/>
+<circle x="0.5" y="-3.25" radius="0.2" width="0" layer="29"/>
+<circle x="-0.5" y="3.25" radius="0.1" width="0" layer="29"/>
+<circle x="0" y="2.75" radius="0.2" width="0" layer="29"/>
+<circle x="0" y="-2.25" radius="0.2" width="0" layer="29"/>
+<circle x="-1" y="1.25" radius="0.2" width="0" layer="29"/>
+<circle x="-2" y="0.25" radius="0.2" width="0" layer="29"/>
+<circle x="1" y="1.25" radius="0.2" width="0" layer="29"/>
+<circle x="2" y="0.25" radius="0.2" width="0" layer="29"/>
+<circle x="0" y="2.25" radius="0.2" width="0" layer="29"/>
+<circle x="0" y="1.75" radius="0.2" width="0" layer="29"/>
+<circle x="0" y="1.25" radius="0.2" width="0" layer="29"/>
+<circle x="0" y="0.75" radius="0.2" width="0" layer="29"/>
+<circle x="0" y="0.25" radius="0.2" width="0" layer="29"/>
+<circle x="0" y="-0.25" radius="0.2" width="0" layer="29"/>
+<circle x="0" y="-0.75" radius="0.2" width="0" layer="29"/>
+<circle x="0" y="-1.25" radius="0.2" width="0" layer="29"/>
+<circle x="0" y="-1.75" radius="0.2" width="0" layer="29"/>
+<circle x="-0.5" y="0.75" radius="0.2" width="0" layer="29"/>
+<circle x="0.5" y="0.75" radius="0.2" width="0" layer="29"/>
+<circle x="-1.5" y="-0.25" radius="0.2" width="0" layer="29"/>
+<circle x="-1" y="-0.75" radius="0.2" width="0" layer="29"/>
+<circle x="-0.5" y="-1.25" radius="0.2" width="0" layer="29"/>
+<circle x="0.5" y="-1.25" radius="0.2" width="0" layer="29"/>
+<circle x="1" y="-0.75" radius="0.2" width="0" layer="29"/>
+<circle x="1.5" y="-0.25" radius="0.2" width="0" layer="29"/>
+<circle x="0" y="3.25" radius="0.1" width="0" layer="29"/>
+<circle x="0.5" y="3.25" radius="0.1" width="0" layer="29"/>
+<circle x="-1" y="2.75" radius="0.1" width="0" layer="29"/>
+<circle x="-1.5" y="2.25" radius="0.1" width="0" layer="29"/>
+<circle x="-2" y="1.75" radius="0.1" width="0" layer="29"/>
+<circle x="-2" y="1.25" radius="0.1" width="0" layer="29"/>
+<circle x="-2.5" y="0.75" radius="0.1" width="0" layer="29"/>
+<circle x="-2.5" y="0.25" radius="0.1" width="0" layer="29"/>
+<circle x="-3" y="-0.25" radius="0.1" width="0" layer="29"/>
+<circle x="-3" y="-0.75" radius="0.1" width="0" layer="29"/>
+<circle x="-3" y="-1.25" radius="0.1" width="0" layer="29"/>
+<circle x="-2.5" y="-1.75" radius="0.1" width="0" layer="29"/>
+<circle x="-2" y="-1.75" radius="0.1" width="0" layer="29"/>
+<circle x="-1.5" y="-2.25" radius="0.1" width="0" layer="29"/>
+<circle x="-1" y="-2.25" radius="0.1" width="0" layer="29"/>
+<circle x="-0.5" y="-2.25" radius="0.1" width="0" layer="29"/>
+<circle x="0" y="-2.75" radius="0.1" width="0" layer="29"/>
+<circle x="0" y="-3.25" radius="0.1" width="0" layer="29"/>
+<circle x="-2" y="-0.25" radius="0.1" width="0" layer="29"/>
+<circle x="-1.5" y="-0.75" radius="0.1" width="0" layer="29"/>
+<circle x="-1" y="-1.25" radius="0.1" width="0" layer="29"/>
+<circle x="-0.5" y="-1.75" radius="0.1" width="0" layer="29"/>
+<circle x="0.5" y="-1.75" radius="0.1" width="0" layer="29"/>
+<circle x="0.5" y="-2.25" radius="0.1" width="0" layer="29"/>
+<circle x="1" y="-2.25" radius="0.1" width="0" layer="29"/>
+<circle x="1.5" y="-2.25" radius="0.1" width="0" layer="29"/>
+<circle x="1" y="-1.25" radius="0.1" width="0" layer="29"/>
+<circle x="1.5" y="-0.75" radius="0.1" width="0" layer="29"/>
+<circle x="2" y="-0.25" radius="0.1" width="0" layer="29"/>
+<circle x="1" y="2.75" radius="0.1" width="0" layer="29"/>
+<circle x="1.5" y="2.25" radius="0.1" width="0" layer="29"/>
+<circle x="2" y="1.75" radius="0.1" width="0" layer="29"/>
+<circle x="2" y="1.25" radius="0.1" width="0" layer="29"/>
+<circle x="2.5" y="0.75" radius="0.1" width="0" layer="29"/>
+<circle x="2.5" y="0.25" radius="0.1" width="0" layer="29"/>
+<circle x="3" y="-0.25" radius="0.1" width="0" layer="29"/>
+<circle x="3" y="-0.75" radius="0.1" width="0" layer="29"/>
+<circle x="3" y="-1.25" radius="0.1" width="0" layer="29"/>
+<circle x="2.5" y="-1.75" radius="0.1" width="0" layer="29"/>
+<circle x="2" y="-1.75" radius="0.1" width="0" layer="29"/>
+<circle x="-2" y="0.75" radius="0.1" width="0" layer="29"/>
+<circle x="-1.5" y="0.75" radius="0.1" width="0" layer="29"/>
+<circle x="-1.5" y="0.25" radius="0.1" width="0" layer="29"/>
+<circle x="-1" y="0.75" radius="0.1" width="0" layer="29"/>
+<circle x="-1" y="0.25" radius="0.1" width="0" layer="29"/>
+<circle x="-0.5" y="0.25" radius="0.1" width="0" layer="29"/>
+<circle x="-0.5" y="-0.25" radius="0.1" width="0" layer="29"/>
+<circle x="-1" y="-0.25" radius="0.1" width="0" layer="29"/>
+<circle x="-0.5" y="-0.75" radius="0.1" width="0" layer="29"/>
+<circle x="-2.5" y="-0.25" radius="0.1" width="0" layer="29"/>
+<circle x="-2.5" y="-0.75" radius="0.1" width="0" layer="29"/>
+<circle x="-2.5" y="-1.25" radius="0.1" width="0" layer="29"/>
+<circle x="-2" y="-1.25" radius="0.1" width="0" layer="29"/>
+<circle x="-2" y="-0.75" radius="0.1" width="0" layer="29"/>
+<circle x="-1.5" y="-1.25" radius="0.1" width="0" layer="29"/>
+<circle x="-1.5" y="-1.75" radius="0.1" width="0" layer="29"/>
+<circle x="-1" y="-1.75" radius="0.1" width="0" layer="29"/>
+<circle x="-0.5" y="2.75" radius="0.1" width="0" layer="29"/>
+<circle x="-0.5" y="2.25" radius="0.1" width="0" layer="29"/>
+<circle x="-1" y="2.25" radius="0.1" width="0" layer="29"/>
+<circle x="-1" y="1.75" radius="0.1" width="0" layer="29"/>
+<circle x="-1.5" y="1.75" radius="0.1" width="0" layer="29"/>
+<circle x="-1.5" y="1.25" radius="0.1" width="0" layer="29"/>
+<circle x="-0.5" y="1.75" radius="0.1" width="0" layer="29"/>
+<circle x="-0.5" y="1.25" radius="0.1" width="0" layer="29"/>
+<circle x="0.5" y="2.75" radius="0.1" width="0" layer="29"/>
+<circle x="0.5" y="2.25" radius="0.1" width="0" layer="29"/>
+<circle x="0.5" y="1.75" radius="0.1" width="0" layer="29"/>
+<circle x="0.5" y="1.25" radius="0.1" width="0" layer="29"/>
+<circle x="1" y="1.75" radius="0.1" width="0" layer="29"/>
+<circle x="1" y="2.25" radius="0.1" width="0" layer="29"/>
+<circle x="1.5" y="1.75" radius="0.1" width="0" layer="29"/>
+<circle x="1.5" y="1.25" radius="0.1" width="0" layer="29"/>
+<circle x="1.5" y="0.75" radius="0.1" width="0" layer="29"/>
+<circle x="2" y="0.75" radius="0.1" width="0" layer="29"/>
+<circle x="1" y="0.75" radius="0.1" width="0" layer="29"/>
+<circle x="0.5" y="0.25" radius="0.1" width="0" layer="29"/>
+<circle x="1" y="0.25" radius="0.1" width="0" layer="29"/>
+<circle x="1.5" y="0.25" radius="0.1" width="0" layer="29"/>
+<circle x="1" y="-0.25" radius="0.1" width="0" layer="29"/>
+<circle x="0.5" y="-0.25" radius="0.1" width="0" layer="29"/>
+<circle x="0.5" y="-0.75" radius="0.1" width="0" layer="29"/>
+<circle x="1" y="-1.75" radius="0.1" width="0" layer="29"/>
+<circle x="1.5" y="-1.25" radius="0.1" width="0" layer="29"/>
+<circle x="1.5" y="-1.75" radius="0.1" width="0" layer="29"/>
+<circle x="2" y="-1.25" radius="0.1" width="0" layer="29"/>
+<circle x="2" y="-0.75" radius="0.1" width="0" layer="29"/>
+<circle x="2.5" y="-0.25" radius="0.1" width="0" layer="29"/>
+<circle x="2.5" y="-0.75" radius="0.1" width="0" layer="29"/>
+<circle x="2.5" y="-1.25" radius="0.1" width="0" layer="29"/>
+</package>
 </packages>
 <symbols>
 <symbol name="BUFFER">
@@ -8120,6 +8294,15 @@ ON TOP SIDE</text>
 </gates>
 <devices>
 <device name="-0805" package="0805-NP">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-0603" package="0603-NP">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
