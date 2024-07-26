@@ -2416,19 +2416,19 @@ design rules under a new name.
 </element>
 <element name="U$1" library="TinyNES_Library" package="_PIXEL-ART-1UP" value="" x="64.135" y="30.48" smashed="yes"/>
 <element name="U$2" library="TinyNES_Library" package="_PIXEL-ART-LEAF" value="" x="29.21" y="55.499" smashed="yes"/>
-<element name="R28" library="TinyNES_Library" package="0603-NP" value="1M" x="67.31" y="41.275" smashed="yes" rot="R270">
+<element name="R28" library="TinyNES_Library" package="0603-NP" value="10k" x="67.31" y="41.275" smashed="yes" rot="R270">
 <attribute name="NAME" x="67.31" y="43.053" size="1" layer="21" ratio="10" rot="R90" align="center-left"/>
 <attribute name="NAME" x="67.31" y="41.275" size="0.75" layer="51" font="vector" ratio="12" rot="R270" align="center"/>
 </element>
-<element name="R27" library="TinyNES_Library" package="0603-NP" value="1M" x="65.405" y="41.275" smashed="yes" rot="R270">
+<element name="R27" library="TinyNES_Library" package="0603-NP" value="10k" x="65.405" y="41.275" smashed="yes" rot="R270">
 <attribute name="NAME" x="65.405" y="43.053" size="1" layer="21" ratio="10" rot="R90" align="center-left"/>
 <attribute name="NAME" x="65.405" y="41.275" size="0.75" layer="51" font="vector" ratio="12" rot="R270" align="center"/>
 </element>
-<element name="R26" library="TinyNES_Library" package="0603-NP" value="1M" x="63.5" y="41.275" smashed="yes" rot="R270">
+<element name="R26" library="TinyNES_Library" package="0603-NP" value="10k" x="63.5" y="41.275" smashed="yes" rot="R270">
 <attribute name="NAME" x="63.5" y="43.053" size="1" layer="21" ratio="10" rot="R90" align="center-left"/>
 <attribute name="NAME" x="63.5" y="41.275" size="0.75" layer="51" font="vector" ratio="12" rot="R270" align="center"/>
 </element>
-<element name="R25" library="TinyNES_Library" package="0603-NP" value="1M" x="61.595" y="41.275" smashed="yes" rot="R270">
+<element name="R25" library="TinyNES_Library" package="0603-NP" value="10k" x="61.595" y="41.275" smashed="yes" rot="R270">
 <attribute name="NAME" x="61.595" y="43.053" size="1" layer="21" ratio="10" rot="R90" align="center-left"/>
 <attribute name="NAME" x="61.595" y="41.275" size="0.75" layer="51" ratio="12" rot="R270" align="center"/>
 </element>

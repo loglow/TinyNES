@@ -3871,10 +3871,10 @@ DIN A3, landscape with extra doc field</description>
 <part name="VCC29" library="TinyNES_Library" deviceset="VCC" device=""/>
 <part name="GND38" library="TinyNES_Library" deviceset="GND" device=""/>
 <part name="GND39" library="TinyNES_Library" deviceset="GND" device=""/>
-<part name="R28" library="TinyNES_Library" deviceset="RESISTOR" device="-0603" value="1M"/>
-<part name="R27" library="TinyNES_Library" deviceset="RESISTOR" device="-0603" value="1M"/>
-<part name="R26" library="TinyNES_Library" deviceset="RESISTOR" device="-0603" value="1M"/>
-<part name="R25" library="TinyNES_Library" deviceset="RESISTOR" device="-0603" value="1M"/>
+<part name="R28" library="TinyNES_Library" deviceset="RESISTOR" device="-0603" value="10k"/>
+<part name="R27" library="TinyNES_Library" deviceset="RESISTOR" device="-0603" value="10k"/>
+<part name="R26" library="TinyNES_Library" deviceset="RESISTOR" device="-0603" value="10k"/>
+<part name="R25" library="TinyNES_Library" deviceset="RESISTOR" device="-0603" value="10k"/>
 <part name="GND13" library="TinyNES_Library" deviceset="GND" device=""/>
 <part name="GND40" library="TinyNES_Library" deviceset="GND" device=""/>
 <part name="GND41" library="TinyNES_Library" deviceset="GND" device=""/>
